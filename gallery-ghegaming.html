@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghế gaming công thái học   - Greendecor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://res.cloudinary.com/du17geywu/image/upload/v1763371357/background1_nep9ox.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(51,51,51,0.9);
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* xuống 1 dòng */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* khoảng cách giữa tiêu đề và nút */
+    }
+
+    /* ⭐ FIX chữ không bị trùng với nút mua ⭐ */
+    header div {
+      padding-right: 130px;
+    }
+
+    .header-buy {
+      background: #fe2c55;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      position: static; /* không nằm chồng nữa */
+    }
+
+    /* TIÊU ĐỀ */
+    h2 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    /* GALLERY CHUNG */
+    .main-gallery,
+    .gallery {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    /* 2 ảnh / hàng */
+    .gallery-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4 ảnh / hàng */
+    .gallery-bottom {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ẢNH không bị cắt */
+    .main-gallery img,
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .gallery-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* ⭐ Header chữ tự xuống dòng khi nhỏ ⭐ */
+      header {
+        font-size: 18px;
+      }
+
+      header div {
+        padding-right: 0;
+        margin-right: 90px;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 60px 0;
+      flex-wrap: wrap;
+    }
+
+    a.back, .buy-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.back { background: #555; color: white; }
+    .buy-link { background: #fe2c55; color: white; }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">Ghế gaming công thái học  - Greendecor</div>
+  <a class="header-buy" href="https://s.shopee.vn/7AW0yFMNWi" target="_blank">Mua sản phẩm ở đây</a>
+</header>
+
+<h2>Ảnh sản phẩm</h2>
+<div class="main-gallery gallery-top">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083529/z1_lzz1e1.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083532/z2_c4hmes.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083530/z3_zopcnk.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083530/z4_xrczvl.webp">
+  </div>
+<h2>Ảnh khách trả hàng thực tế</h2>
+<div class="gallery gallery-bottom">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083531/z5_nnljcz.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083531/z6_bly1ph.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763873903/z7_jbqcm6.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083531/z8_lryrne.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083532/z9_lek7e7.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083533/z10_zmcqzh.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083532/z11_zzjkvt.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083532/z12_oh25cb.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083532/z13_khsbgr.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083534/z14_cinhrb.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083533/z15_p8bsbq.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083534/z16_zvd0uq.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083535/z17_bpabmn.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083534/z18_s2pqff.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083540/z19_gcm1on.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083574/z20_cyuqui.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083598/z21_shykyl.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083598/z22_wx5cu6.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083598/z23_ixni7i.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1764083598/z24_jwamtg.webp"> 
+</div>
+<div class="button-group">
+  <a class="back" href="index.html">⬅️ Quay lại trang chính</a>
+  <a class="buy-link" href="https://s.shopee.vn/7AW0yFMNWi" target="_blank">Mua sản phẩm ở đây</a>
+</div>
+
+</body>
+</html>

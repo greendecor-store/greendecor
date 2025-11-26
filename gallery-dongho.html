@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đồng hồ led để bàn   - Greendecor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://res.cloudinary.com/du17geywu/image/upload/v1763371357/background1_nep9ox.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(51,51,51,0.9);
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* xuống 1 dòng */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* khoảng cách giữa tiêu đề và nút */
+    }
+
+    /* ⭐ FIX chữ không bị trùng với nút mua ⭐ */
+    header div {
+      padding-right: 130px;
+    }
+
+    .header-buy {
+      background: #fe2c55;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      position: static; /* không nằm chồng nữa */
+    }
+
+    /* TIÊU ĐỀ */
+    h2 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    /* GALLERY CHUNG */
+    .main-gallery,
+    .gallery {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    /* 2 ảnh / hàng */
+    .gallery-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4 ảnh / hàng */
+    .gallery-bottom {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ẢNH không bị cắt */
+    .main-gallery img,
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .gallery-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* ⭐ Header chữ tự xuống dòng khi nhỏ ⭐ */
+      header {
+        font-size: 18px;
+      }
+
+      header div {
+        padding-right: 0;
+        margin-right: 90px;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 60px 0;
+      flex-wrap: wrap;
+    }
+
+    a.back, .buy-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.back { background: #555; color: white; }
+    .buy-link { background: #fe2c55; color: white; }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">Đồng hồ led để bàn  - Greendecor</div>
+  <a class="header-buy" href="https://s.shopee.vn/4VVHKKBnLA" target="_blank">Mua sản phẩm ở đây</a>
+</header>
+
+<h2>Ảnh sản phẩm</h2>
+<div class="main-gallery gallery-top">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623887/d1_dtpd9w.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623887/d2_jqoykk.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623887/d3_phktno.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623887/d4_gylcdy.webp">
+  </div>
+<h2>Ảnh khách trả hàng thực tế</h2>
+<div class="gallery gallery-bottom">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623886/d5_slzpin.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623887/d6_uxgdyc.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623888/d7_cwf7vv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623910/d9_qwoui4.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623923/d10_yzmmnf.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623928/d11_g4git2.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623927/d12_fmff8c.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623928/d13_a438ey.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623929/d14_xxsl3a.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623929/d15_f1adrb.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623928/d16_wlwnqn.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623928/d17_ekfoqa.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623978/d30_bqachc.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623929/d19_kftbij.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623931/d21_yr9txc.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623930/d22_iwbkt0.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623930/d23_snjrrw.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623930/d24_r5teac.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623931/d25_bmvhvy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623933/d26_cocu9p.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623932/d27_asjsxe.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623977/d28_kawg3l.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763623978/d29_asmnup.webp">
+</div>
+
+<div class="button-group">
+  <a class="back" href="index.html">⬅️ Quay lại trang chính</a>
+  <a class="buy-link" href="https://s.shopee.vn/4VVHKKBnLA" target="_blank">Mua sản phẩm ở đây</a>
+</div>
+
+</body>
+</html>

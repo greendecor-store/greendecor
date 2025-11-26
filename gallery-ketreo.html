@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kệ Treo Quần Ao  - Greendecor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://res.cloudinary.com/du17geywu/image/upload/v1763371357/background1_nep9ox.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(51,51,51,0.9);
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* xuống 1 dòng */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* khoảng cách giữa tiêu đề và nút */
+    }
+
+    /* ⭐ FIX chữ không bị trùng với nút mua ⭐ */
+    header div {
+      padding-right: 130px;
+    }
+
+    .header-buy {
+      background: #fe2c55;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      position: static; /* không nằm chồng nữa */
+    }
+
+    /* TIÊU ĐỀ */
+    h2 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    /* GALLERY CHUNG */
+    .main-gallery,
+    .gallery {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    /* 2 ảnh / hàng */
+    .gallery-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4 ảnh / hàng */
+    .gallery-bottom {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ẢNH không bị cắt */
+    .main-gallery img,
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .gallery-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* ⭐ Header chữ tự xuống dòng khi nhỏ ⭐ */
+      header {
+        font-size: 18px;
+      }
+
+      header div {
+        padding-right: 0;
+        margin-right: 90px;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 60px 0;
+      flex-wrap: wrap;
+    }
+
+    a.back, .buy-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.back { background: #555; color: white; }
+    .buy-link { background: #fe2c55; color: white; }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <div class="header-title">Kệ Treo Quần Ao - Greendecor</div>
+  <a class="header-buy" href="https://s.shopee.vn/1LYDwXO0a6" target="_blank">Mua sản phẩm ở đây</a>
+</header>
+
+<h2>Ảnh sản phẩm</h2>
+<div class="main-gallery gallery-top">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862287/a1_kzxedn.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862287/a2_uzaoq6.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862288/a3_wpwdye.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862289/a4_k45m2c.webp">
+  </div>
+
+<h2>Ảnh khách trả hàng thực tế</h2>
+<div class="gallery gallery-bottom">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862288/a5_eht10a.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862288/a6_xix3wn.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862289/a7_lkyrjb.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862298/a8_fmp5wv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862299/a9_rxcudv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862300/a10_k7ydjd.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862300/a11_b5tyzc.webp ">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862302/a12_gccra5.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862319/a13_je9ykd.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862321/a14_g63ywe.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862320/a15_yc8sro.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862319/a16_o2fhyp.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862326/a17_wllo7h.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862327/a18_dgfvez.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862328/a19_opploe.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862327/a20_gau6ed.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862328/a21_rn3llf.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862329/a22_apuf2k.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862336/a23_wleffy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862336/a24_dhv48d.webp"> 
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862339/a25_ez2lmq.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763862338/a26_wuu4cr.webp"> 
+ <div>
+
+<div class="button-group">
+  <a class="back" href="index.html">⬅️ Quay lại trang chính</a>
+  <a class="buy-link" href="https://s.shopee.vn/1LYDwXO0a6" target="_blank">Mua sản phẩm ở đây</a>
+</div>
+
+</body>
+</html>

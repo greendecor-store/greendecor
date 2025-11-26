@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>GHẾ BỆT TỰA LƯNG  - Greendecor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://res.cloudinary.com/du17geywu/image/upload/v1763371357/background1_nep9ox.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(51,51,51,0.9);
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* xuống 1 dòng */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* khoảng cách giữa tiêu đề và nút */
+    }
+
+    /* ⭐ FIX chữ không bị trùng với nút mua ⭐ */
+    header div {
+      padding-right: 130px;
+    }
+
+    .header-buy {
+      background: #fe2c55;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      position: static; /* không nằm chồng nữa */
+    }
+
+    /* TIÊU ĐỀ */
+    h2 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    /* GALLERY CHUNG */
+    .main-gallery,
+    .gallery {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    /* 2 ảnh / hàng */
+    .gallery-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4 ảnh / hàng */
+    .gallery-bottom {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ẢNH không bị cắt */
+    .main-gallery img,
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .gallery-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* ⭐ Header chữ tự xuống dòng khi nhỏ ⭐ */
+      header {
+        font-size: 18px;
+      }
+
+      header div {
+        padding-right: 0;
+        margin-right: 90px;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 60px 0;
+      flex-wrap: wrap;
+    }
+
+    a.back, .buy-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.back { background: #555; color: white; }
+    .buy-link { background: #fe2c55; color: white; }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">GHẾ BỆT TỰA LƯNG - Greendecor</div>
+  <a class="header-buy" href="https://s.shopee.vn/4q87iQnzJW" target="_blank">Mua sản phẩm ở đây</a>
+</header>
+
+<h2>Ảnh sản phẩm</h2>
+<div class="main-gallery gallery-top">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450819/g1_ltuhyn.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450820/g0_rdp8ig.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450872/g2_grpc0t.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450820/g3_rjjjld.webp">
+</div>
+<h2>Ảnh khách trả hàng thực tế</h2>
+<div class="gallery gallery-bottom">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450871/g4_ximbia.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450874/g5_ygtvyd.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450872/g6_h3r5s1.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450875/g7_iufmyu.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450873/g8_hgl8na.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450872/g9_okvgkx.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450875/g10_zeywvv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450874/g11_uvamxr.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450873/g12_zeoo9l.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450874/g13_vt1pls.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450875/g14_ujaklc.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450887/g15_x2tef4.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450887/g16_tb2cfh.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450887/g17_gxlqjv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450891/g18_mkxqgw.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450887/g19_igsauy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450888/g20_zwvecy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450889/g21_kohcfw.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450897/g22_zgofng.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450897/g23_gajwyj.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450895/g24_vim3ch.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450895/g25_u42goo.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450898/g26_xbc3ty.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450896/g27_tkcs6v.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763450872/g28_lvpegp.webp">
+</div>
+
+<div class="button-group">
+  <a class="back" href="index.html">⬅️ Quay lại trang chính</a>
+  <a class="buy-link" href="https://s.shopee.vn/4q87iQnzJW" target="_blank">Mua sản phẩm ở đây</a>
+</div>
+
+</body>
+</html>

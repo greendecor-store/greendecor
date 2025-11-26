@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghế Xoay Văn Phòng - Greendecor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://res.cloudinary.com/du17geywu/image/upload/v1763371357/background1_nep9ox.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(51,51,51,0.9);
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* xuống 1 dòng */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* khoảng cách giữa tiêu đề và nút */
+    }
+
+    /* ⭐ FIX chữ không bị trùng với nút mua ⭐ */
+    header div {
+      padding-right: 130px;
+    }
+
+    .header-buy {
+      background: #fe2c55;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      position: static; /* không nằm chồng nữa */
+    }
+
+    /* TIÊU ĐỀ */
+    h2 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    /* GALLERY CHUNG */
+    .main-gallery,
+    .gallery {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    /* 2 ảnh / hàng */
+    .gallery-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4 ảnh / hàng */
+    .gallery-bottom {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ẢNH không bị cắt */
+    .main-gallery img,
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .gallery-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* ⭐ Header chữ tự xuống dòng khi nhỏ ⭐ */
+      header {
+        font-size: 18px;
+      }
+
+      header div {
+        padding-right: 0;
+        margin-right: 90px;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 60px 0;
+      flex-wrap: wrap;
+    }
+
+    a.back, .buy-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.back { background: #555; color: white; }
+    .buy-link { background: #fe2c55; color: white; }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">Ghế Xoay Văn Phòng - Greendecor</div>
+  <a class="header-buy" href="https://s.shopee.vn/2g3baV1Ktx" target="_blank">Mua sản phẩm ở đây</a>
+</header>
+
+<h2>Ảnh sản phẩm</h2>
+<div class="main-gallery gallery-top">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798769/r1_gmrzql.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798770/r2_rtsqau.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798770/r3_wgsvqv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798771/r4_lbsr8q.webp">
+  </div>
+<h2>Ảnh khách trả hàng thực tế</h2>
+<div class="gallery gallery-bottom">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798771/r5_ksj0tl.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798784/r6_i4hgt2.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798783/r7_sid9hv.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798784/r8_qhu1og.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798783/r9_mbwwv1.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798786/r10_jqnpf8.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763797253/q11_fiesoj.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798796/r12_of1lnu.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798797/r13_e4ycyy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798800/r14_ovwctl.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798802/r15_wt2gon.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798809/r16_n35whf.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798809/r17_fxm4lh.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798810/r18_n9borg.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798890/r19_xkihkj.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798817/r20_jg0ovu.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798818/r21_guaajk.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798891/r22_rjzboy.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798817/r23_zznxfq.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798819/r24_ufmisi.webp"> 
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798821/r25_abtw6w.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798828/r26_gkplkz.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798829/r27_djtciu.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798830/r28_ulon8m.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798830/r29_mwfrac.webp">
+  <img src="https://res.cloudinary.com/du17geywu/image/upload/v1763798834/r30_quet7e.webp"> 
+
+
+ <div>
+
+<div class="button-group">
+  <a class="back" href="index.html">⬅️ Quay lại trang chính</a>
+  <a class="buy-link" href="https://s.shopee.vn/2g3baV1Ktx" target="_blank">Mua sản phẩm ở đây</a>
+</div>
+
+</body>
+</html>
